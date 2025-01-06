@@ -4,3 +4,4 @@ python-jose
 jinja2
 passlib
 python-multipart
+bcrypt
