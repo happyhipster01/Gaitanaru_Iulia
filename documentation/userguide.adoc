@@ -1,0 +1,54 @@
+= Ghid pentru rularea aplicației FastAPI
+
+== 1. Instalarea prealabilă a dependințelor
+
+=== 1.1. Creează un Mediu Virtual
+Pentru a izola dependințele proiectului:
+
+1. Deschide un terminal/command prompt.
+2. Rulează următoarea comandă pentru a crea un mediu virtual:
+   ```bash
+   python -m venv venv
+   ```
+3. Activează mediul virtual:
+   - Pe Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+   - Pe macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+
+=== 1.2. Instalează dependințele
+
+1. Asigură-te că fișierul `requirements.txt` se află în directorul principal al proiectului.
+2. Rulează comanda:
+   ```bash
+   pip install -r requirements.txt
+   ```
+Aceasta va instala următoarele pachete necesare:
+- FastAPI
+- Uvicorn
+- Python-Jose
+- Jinja2
+- Passlib
+- Python-multipart
+
+== 2. Pornirea aplicației FastAPI
+
+1. Asigură-te că te afli în directorul principal al proiectului.
+2. Rulează următoarea comandă pentru a porni serverul FastAPI utilizând Uvicorn:
+   ```bash
+   uvicorn app.main:app --reload
+   ```
+3. După ce serverul pornește cu succes, accesează aplicația în browser la adresa:
+   [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+== 3. Logarea în aplicație
+
+1. Pe pagina principală de logare, introdu următoarele credențiale:
+   - **Utilizator:** `user`
+   - **Parolă:** `password`
+
+2. După logare reușită, vei fi redirecționat către dashboard.
