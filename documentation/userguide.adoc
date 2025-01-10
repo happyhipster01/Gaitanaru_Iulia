@@ -35,6 +35,7 @@ Aceasta va instala următoarele pachete necesare:
 - Passlib
 - Python-multipart
 - Bcrypt
+- Cryptography
 
 == 2. Pornirea aplicației FastAPI
 
